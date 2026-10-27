@@ -77,10 +77,24 @@ Website email: drbruzzeselmhc@gmail.com
 Do not collect protected health information through an ordinary static contact form or regular email. Use your HIPAA-compliant EHR/portal for clinical communication, intake paperwork, and protected information.
 
 ## Files
-- `index.html` — full public website
-- `portal.html` — dedicated telehealth portal landing page
+Each page is a standalone HTML file that shares the same header, navigation, and footer. If you change a nav or footer link, update it on every page.
+
+- `index.html` — home page (online therapy in Massachusetts, how to get started, FAQ)
+- `services.html` — therapy services overview
+- `anxiety-therapy.html`, `depression-therapy.html`, `trauma-therapy.html`, `child-adolescent-therapy.html`, `couples-family-therapy.html` — individual service pages
+- `about.html` — practice description and "Meet Our Team" tiles
+- `team-ralph-bruzzese.html` — individual team profile (copy this file for each new team member and add a tile in `about.html`)
+- `insurance-fees.html` — MassHealth / Blue Cross information and Good Faith Estimate notice
+- `telehealth.html` — how telehealth works and eligibility (client must be located in Massachusetts)
+- `referrals.html` — information for referring professionals
+- `organizations.html` — schools, agencies, and employers
+- `contact.html` — contact form (opens an email draft; `contact.html?topic=referral|insurance|organization` preselects the subject)
+- `portal.html` — dedicated telehealth portal landing page (not indexed by search engines)
+- `privacy.html` — website privacy notice (Google Analytics disclosure; separate from the HIPAA Notice of Privacy Practices)
+- `404.html` — page-not-found page used by GitHub Pages
+- `sitemap.xml`, `robots.txt` — submit `https://www.connecttherapyonline.com/sitemap.xml` in Google Search Console
 - `styles.css` — colors/layout/mobile styling
-- `script.js` — mobile navigation/current year
+- `script.js` — mobile navigation, contact form email draft, current year
 - `assets/connect-therapy-logo.jpg` — practice logo (full, with wordmark)
 - `assets/ct-mark.jpg` — circular "CT" monogram used in the header/footer
-- `assets/coastal-water.jpg` — hero/contact background photo
+- `assets/harbor-sunset-branded.jpg` / `assets/harbor-sunset.jpg` — hero and page-header backgrounds
